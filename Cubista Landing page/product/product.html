@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubista Landing</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../demo-modal.css" />
+    <style>
+      .js .reveal-on-scroll {
+        opacity: 0;
+      }
+
+      .js .reveal-on-scroll.is-visible {
+        animation: reveal-fade 0.65s ease forwards;
+      }
+
+      @keyframes reveal-fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .js .reveal-on-scroll {
+          opacity: 1;
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../site-header.js" data-base=".."></script>
+
+    <main>
+      <section class="hero container" id="product">
+        <div class="hero-composite">
+          <img src="../assets/imgs/chat-built.png" alt="Cubista chat interface" />
+          <div class="hero-copy">
+            <h1>Built Like a Brain, not a Filing Cabinet</h1>
+            <p class="hero-subtitle">
+              Why Cubista finds relationship other systems can't.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-architecture container" id="about">
+        <h2>Why Architecture Matters</h2>
+        <p>
+          Traditional databases work like filing cabinets. You can label records,
+          save fields, and retrieve exactly what was entered. That works well for
+          static facts.
+        </p>
+        <p>
+          Human memory works differently. It connects signals, context, and prior
+          conversations. It surfaces useful relationships without requiring rigid
+          categories first.
+        </p>
+        <div class="why-architecture-divider" aria-hidden="true"></div>
+        <p class="highlight highlight-main">Cubista works like your brain.</p>
+        <p>
+          Instead of forcing relationship knowledge into flat tables, Cubista
+          builds a connected layer of context.
+        </p>
+        <p>
+          That means answers come from paths in your network, not only from
+          isolated entries.
+        </p>
+        <p class="highlight highlight-result">
+          The result: unlinked memories, latent trust, and relationship paths
+          traditional systems would never surface.
+        </p>
+      </section>
+
+      <section class="cards-strip container">
+        <article class="feature-card">
+          <img src="../assets/imgs/first-gray-card.png" alt="Conversation card" />
+          <p class="feature-step">01 — Connect</p>
+          <h3 class="feature-title">Moving, Not Labels</h3>
+          <p class="feature-description">
+            "Met someone in alternatives" finds people you never tagged that way.
+            Search by concept, not keywords.
+          </p>
+        </article>
+        <article class="feature-card">
+          <img src="../assets/imgs/blue-man.png" alt="Person in vehicle" />
+          <p class="feature-step">02 — Capture</p>
+          <h3 class="feature-title">No Forms. No Fields.</h3>
+          <p class="feature-description">
+            Tell Cubista what you know-voice or text. It extracts people,
+            companies, and context automatically.
+          </p>
+        </article>
+        <article class="feature-card">
+          <img src="../assets/imgs/relationship-path.png" alt="Relationship paths" />
+          <p class="feature-step">03 — Discover</p>
+          <h3 class="feature-title">Paths You Never Created</h3>
+          <p class="feature-description">
+            "How do I reach [target]?" Cubista traces through your entire network
+            to find the connection.
+          </p>
+        </article>
+      </section>
+
+      <section class="architecture container">
+        <h2>The Architecture</h2>
+        <div class="architecture-stack">
+          <div class="arch-card">
+            <img src="../assets/svg/voice-bars.svg" alt="" />
+            <h3>You</h3>
+            <p>Voice or text input</p>
+          </div>
+          <div class="arch-line"></div>
+          <div class="arch-card">
+            <img src="../assets/svg/layers.svg" alt="" />
+            <h3>Cubista Intelligence Layer</h3>
+            <p>Extracts meaning, maps connections</p>
+          </div>
+          <div class="arch-line"></div>
+          <div class="arch-card">
+            <img src="../assets/svg/contacts.svg" alt="" />
+            <h3>Your Relationship Knowledge</h3>
+            <p>Unified, searchable, alive</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-it-matters container">
+        <h2>Why It Matters</h2>
+        <div class="benefits-grid">
+          <article class="benefit">
+            <img src="../assets/svg/activity-heart.svg" alt="" />
+            <p class="benefit-role">Wealth Advisor</p>
+            <p class="benefit-copy">Surface client connections before meetings.</p>
+          </article>
+          <article class="benefit">
+            <img src="../assets/svg/scales-02.svg" alt="" />
+            <p class="benefit-role">Law Partner</p>
+            <p class="benefit-copy">Find who knows opposing counsel.</p>
+          </article>
+          <article class="benefit">
+            <img src="../assets/svg/lightning-02.svg" alt="" />
+            <p class="benefit-role">VC Partner</p>
+            <p class="benefit-copy">
+              Map paths to founders through your LP network.
+            </p>
+          </article>
+          <article class="benefit">
+            <img src="../assets/svg/bank.svg" alt="" />
+            <p class="benefit-role">Banker</p>
+            <p class="benefit-copy">Warm introductions to target decision-makers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta container" id="contact">
+        <div class="cta-left">
+          <img src="../assets/imgs/chat-cutted.png" alt="Network suggestion chat" />
+        </div>
+        <div class="cta-right">
+          <h2>See your network the way you already think about it.</h2>
+          <a class="header-cta" href="#">
+            <img src="../assets/svg/calendar-check-02.svg" alt="" aria-hidden="true" />
+            <span>Schedule a Demo</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../site-footer.js" data-base=".."></script>
+    <script>
+      (function () {
+        var targets = document.querySelectorAll(
+          "main section, .feature-card, .benefit, .arch-card"
+        );
+
+        if (!targets.length) {
+          return;
+        }
+
+        targets.forEach(function (el, index) {
+          el.classList.add("reveal-on-scroll");
+          el.style.transitionDelay = (index % 4) * 70 + "ms";
+        });
+
+        if (
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+          !("IntersectionObserver" in window)
+        ) {
+          targets.forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+        );
+
+        targets.forEach(function (el) {
+          observer.observe(el);
+        });
+
+      })();
+    </script>
+    <script src="../demo-modal.js" data-base=".."></script>
+  </body>
+</html>

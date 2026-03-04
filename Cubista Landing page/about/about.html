@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubista About</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="../demo-modal.css" />
+    <style>
+      .js .reveal-on-scroll {
+        opacity: 0;
+      }
+
+      .js .reveal-on-scroll.is-visible {
+        animation: reveal-fade 0.65s ease forwards;
+      }
+
+      @keyframes reveal-fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .js .reveal-on-scroll {
+          opacity: 1;
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="../site-header.js" data-base=".."></script>
+
+    <main>
+      <section class="hero container">
+        <h1>We Built Cubista for Relationship-Driven Enterprises</h1>
+        <p class="hero-copy">
+          Financial services, private equity, wealth advisory, professional
+          services, real estate-businesses that run on relationships. Your data is
+          scattered across silos. Cubista brings it all together and gives you the
+          intelligence to use it.
+        </p>
+        <div class="hero-image-wrap">
+          <img src="../assets/imgs/about/Desktop 1.png" alt="Cubista platform view" />
+        </div>
+      </section>
+
+      <section class="stats-band">
+        <div class="container">
+          <div class="stats-grid">
+            <article class="stat-card">
+              <p class="value">35%</p>
+              <p class="label">
+                say relationship data is
+                <span class="label-accent">"extremely important"</span>
+              </p>
+            </article>
+            <article class="stat-card">
+              <p class="value">25%</p>
+              <p class="label">
+                is <span class="label-accent">dark or outdated</span>-not
+                delivering value
+              </p>
+            </article>
+            <article class="stat-card stat-card-accent">
+              <p class="value">85%</p>
+              <p class="label">Leaders outperform Laggards on AI-powered decisions</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="why container">
+        <h2>Why We Built Cubista</h2>
+        <p>
+          We've spent our careers in financial services and enterprise
+          technology-industries where relationships drive everything. We've seen
+          firsthand how much valuable information gets lost in emails, deal rooms,
+          and scattered notes.
+        </p>
+        <p>
+          <span class="why-accent">
+            Traditional tools capture only a fraction of the intel and force teams
+            to make sense of it.
+          </span>
+          We built Cubista to change that: a platform that
+          unifies all your relationship data and gives you a conversational AI tool
+          to extract insights, uncover opportunities, and act with confidence.
+        </p>
+      </section>
+
+      <section class="leaders-band">
+        <div class="container">
+          <h2>Leadership</h2>
+          <div class="leaders-grid">
+            <article class="leader-card">
+              <img
+                src="../assets/imgs/about/Screen Shot 2026-02-18 at 12.25.11 1.png"
+                alt="Greg King"
+              />
+              <p class="role">Co-Founder &amp; CEO</p>
+              <h3>Greg King, CFA</h3>
+              <p class="bio">
+                Serial founder in financial services with deep expertise in
+                building and scaling asset management businesses. Greg understands
+                the relationship dynamics that drive institutional capital
+                allocation.
+              </p>
+              <div class="leader-divider" aria-hidden="true"></div>
+              <p class="meta">
+                Founder, REX Shares ($8B AUM) · Founder, VelocityShares (acquired
+                2014) · Former Investment Banking, Barclays &amp; Credit Suisse
+              </p>
+            </article>
+            <article class="leader-card">
+              <img
+                src="../assets/imgs/about/Screen Shot 2026-02-18 at 12.25.25 1.png"
+                alt="Hugh Myers"
+              />
+              <p class="role">Co-Founder &amp; CTO</p>
+              <h3>Hugh Myers</h3>
+              <p class="bio">
+                Serial founder in enterprise technology with a track record of
+                building and scaling high-growth startups. Hugh brings deep
+                technical expertise in front-end decision-data platforms and
+                cybersecurity.
+              </p>
+              <div class="leader-divider" aria-hidden="true"></div>
+              <p class="meta">
+                Co-Founder, Snappt (9-figure exit, 2022) · Mentor/Advisor to 500
+                Global Accelerator · Background in enterprise software and cyber
+                (Symantec, F5, Siemens)
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="talk container">
+        <h2>Let's Talk</h2>
+        <a class="header-cta" href="#">
+          <img
+            src="../assets/svg/about/calendar-check-02.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Schedule a Demo</span>
+        </a>
+      </section>
+    </main>
+
+    <script src="../site-footer.js" data-base=".."></script>
+    <script>
+      (function () {
+        var targets = document.querySelectorAll(
+          "main section, .stat-card, .leader-card"
+        );
+
+        if (!targets.length) {
+          return;
+        }
+
+        targets.forEach(function (el, index) {
+          el.classList.add("reveal-on-scroll");
+          el.style.transitionDelay = (index % 4) * 70 + "ms";
+        });
+
+        if (
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+          !("IntersectionObserver" in window)
+        ) {
+          targets.forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries, obs) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+        );
+
+        targets.forEach(function (el) {
+          observer.observe(el);
+        });
+
+      })();
+    </script>
+    <script src="../demo-modal.js" data-base=".."></script>
+  </body>
+</html>
