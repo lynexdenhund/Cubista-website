@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Original PNGs (using webp versions)
+assets/images/*.png
+assets/images/*.jpeg
+assets/images/originals/
+
+# Node
+node_modules/
