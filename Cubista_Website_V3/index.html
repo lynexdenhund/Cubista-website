@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cubista | Relationship Intelligence for Private Equity</title>
+<meta name="description" content="One relational graph across CRM, email, fund management, and opportunity data. Capture in the field. Surface opportunities on demand.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/images/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/light/style.css" />
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Inline SVG sprite: Cubista logo. Referenced via <use href="#cubista-logo"/> below. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <symbol id="cubista-logo" viewBox="18 12 398 88" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0582 75.6086C20.5113 76.5018 19.2574 75.7778 19.2574 73.9915L19.2575 72.5764C19.2576 70.7901 20.5116 68.618 22.0585 67.7248L23.284 67.0172C24.8309 66.124 26.0848 66.848 26.0848 68.6343L26.0847 70.0494C26.0847 71.8356 24.8306 74.0078 23.2837 74.901L22.0582 75.6086ZM24.8602 46.3981C21.7664 48.1845 19.2585 46.7366 19.2586 43.164L19.2588 40.3338C19.2589 36.7613 21.767 32.417 24.8608 30.6306L27.3117 29.2154C30.4055 27.429 32.9134 28.877 32.9133 32.4495L32.9132 35.2797C32.9131 38.8523 30.4049 43.1966 27.3111 44.9829L24.8602 46.3981ZM40.8083 33.2479C38.3332 34.677 36.3269 33.5186 36.327 30.6606L36.3271 29.1848C36.3272 26.3268 38.3337 22.8513 40.8087 21.4222L42.0867 20.6843C44.5618 19.2552 46.5681 20.4135 46.568 23.2716L46.5679 24.7474C46.5678 27.6054 44.5613 31.0808 42.0863 32.5099L40.8083 33.2479ZM19.2581 60.2253C19.258 63.0834 21.2643 64.2417 23.7393 62.8126L25.0173 62.0747C27.4924 60.6456 29.4989 57.1702 29.499 54.3121L29.499 52.8363C29.4991 49.9783 27.4928 48.8199 25.0178 50.249L23.7398 50.987C21.2647 52.4161 19.2582 55.8915 19.2581 58.7495L19.2581 60.2253ZM29.4986 64.1365C29.4986 65.9227 30.7525 66.6467 32.2994 65.7535L33.5249 65.0459C35.0718 64.1527 36.3258 61.9806 36.3259 60.1943L36.326 58.7792C36.326 56.9929 35.0721 56.269 33.5252 57.1622L32.2997 57.8698C30.7528 58.7629 29.4987 60.9351 29.4987 62.7214L29.4986 64.1365ZM52.7823 22.392C51.2354 23.2852 49.9815 22.5612 49.9815 20.7749L49.9816 19.3598C49.9817 17.5736 51.2357 15.4014 52.7826 14.5082L54.0081 13.8006C55.555 12.9075 56.8089 13.6314 56.8089 15.4177L56.8088 16.8328C56.8087 18.6191 55.5547 20.7912 54.0078 21.6844L52.7823 22.392ZM46.5676 34.5717C46.5675 36.358 47.8214 37.082 49.3683 36.1888L50.5938 35.4812C52.1407 34.588 53.3948 32.4159 53.3948 30.6296L53.3949 29.2145C53.3949 27.4282 52.141 26.7042 50.5941 27.5974L49.3686 28.305C47.8217 29.1982 46.5677 31.3704 46.5676 33.1566L46.5676 34.5717ZM45.9541 53.9274C44.4072 54.8206 43.1533 54.0966 43.1533 52.3103L43.1534 50.8952C43.1535 49.109 44.4075 46.9368 45.9544 46.0436L47.1799 45.336C48.7268 44.4428 49.9807 45.1668 49.9807 46.9531L49.9806 48.3682C49.9805 50.1545 48.7265 52.3266 47.1796 53.2198L45.9541 53.9274ZM32.9127 48.3991C32.9126 51.2571 34.9189 52.4155 37.3939 50.9864L38.6719 50.2485C41.147 48.8193 43.1535 45.3439 43.1536 42.4859L43.1536 41.0101C43.1537 38.1521 41.1474 36.9937 38.6724 38.4228L37.3944 39.1608C34.9193 40.5899 32.9128 44.0653 32.9127 46.9233L32.9127 48.3991Z" fill="currentColor"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M83.612 32.335C83.6119 28.7625 86.1198 27.3145 89.2136 29.1009L91.6645 30.5161C94.7583 32.3024 97.2664 36.6467 97.2666 40.2192L97.2667 43.0494C97.2668 46.622 94.7589 48.0699 91.6651 46.2836L89.2142 44.8684C86.1204 43.082 83.6123 38.7377 83.6122 35.1652L83.612 32.335ZM87.0262 52.7217C87.0261 49.8636 89.0324 48.7053 91.5074 50.1344L92.7855 50.8723C95.2605 52.3014 97.267 55.7768 97.2671 58.6349L97.2672 60.1107C97.2673 62.9687 95.2609 64.1271 92.7859 62.6979L91.5079 61.96C89.0329 60.5309 87.0264 57.0555 87.0263 54.1975L87.0262 52.7217ZM74.4386 20.5697C71.9636 19.1406 69.9573 20.299 69.9574 23.157L69.9574 24.6328C69.9575 27.4908 71.964 30.9662 74.4391 32.3953L75.7171 33.1333C78.1921 34.5624 80.1984 33.404 80.1983 30.546L80.1983 29.0702C80.1981 26.2121 78.1917 22.7367 75.7166 21.3076L74.4386 20.5697ZM59.7164 15.3032C59.7164 13.5169 60.9703 12.7929 62.5172 13.6861L63.7427 14.3937C65.2896 15.2869 66.5436 17.459 66.5437 19.2453L66.5437 20.6604C66.5438 22.4467 65.2899 23.1707 63.743 22.2775L62.5175 21.5699C60.9706 20.6767 59.7165 18.5046 59.7165 16.7183L59.7164 15.3032ZM65.9313 27.4828C64.3844 26.5896 63.1304 27.3136 63.1305 29.0999L63.1306 30.515C63.1306 32.3012 64.3847 34.4734 65.9316 35.3666L67.157 36.0742C68.7039 36.9674 69.9579 36.2434 69.9578 34.4571L69.9578 33.042C69.9577 31.2557 68.7036 29.0836 67.1567 28.1904L65.9313 27.4828ZM90.4404 68.5197C90.4403 66.7334 91.6943 66.0094 93.2412 66.9026L94.4666 67.6102C96.0135 68.5034 97.2676 70.6755 97.2677 72.4618L97.2677 73.8769C97.2678 75.6632 96.0138 76.3871 94.4669 75.4939L93.2415 74.7864C91.6946 73.8932 90.4405 71.721 90.4405 69.9348L90.4404 68.5197ZM83.0001 57.0475C81.4532 56.1543 80.1993 56.8783 80.1993 58.6646L80.1994 60.0797C80.1995 61.8659 81.4535 64.0381 83.0004 64.9313L84.2259 65.6388C85.7728 66.532 87.0267 65.8081 87.0266 64.0218L87.0266 62.6067C87.0265 60.8204 85.7725 58.6483 84.2256 57.7551L83.0001 57.0475ZM66.5447 46.8385C66.5447 45.0522 67.7986 44.3282 69.3455 45.2214L70.571 45.929C72.1179 46.8222 73.3719 48.9943 73.372 50.7806L73.3721 52.1957C73.3721 53.982 72.1182 54.706 70.5713 53.8128L69.3458 53.1052C67.7989 52.212 66.5449 50.0399 66.5448 48.2536L66.5447 46.8385ZM77.8529 38.3083C75.3779 36.8792 73.3715 38.0375 73.3716 40.8956L73.3717 42.3714C73.3718 45.2294 75.3783 48.7048 77.8533 50.1339L79.1313 50.8718C81.6064 52.3009 83.6127 51.1426 83.6126 48.2845L83.6125 46.8088C83.6124 43.9507 81.6059 40.4753 79.1309 39.0462L77.8529 38.3083Z" fill="currentColor"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.4039 89.8544C47.3099 91.6406 47.3099 94.5365 50.4038 96.3226L52.8549 97.7377C55.9488 99.5238 60.965 99.5238 64.059 97.7376L66.51 96.3226C69.6039 94.5365 69.6039 91.6406 66.51 89.8544L64.059 88.4394C60.9651 86.6533 55.9488 86.6533 52.8549 88.4394L50.4039 89.8544ZM69.766 82.6179C67.2909 84.0468 67.2909 86.3635 69.766 87.7925L71.0441 88.5303C73.5192 89.9592 77.5322 89.9592 80.0074 88.5303L81.2854 87.7925C83.7606 86.3635 83.7606 84.0468 81.2854 82.6179L80.0074 81.88C77.5322 80.4511 73.5193 80.4511 71.0441 81.88L69.766 82.6179ZM35.6282 87.7925C33.1531 86.3636 33.1531 84.0469 35.6283 82.6179L36.9063 81.8801C39.3815 80.4512 43.3945 80.4512 45.8696 81.8801L47.1477 82.6179C49.6228 84.0468 49.6228 86.3636 47.1477 87.7925L45.8696 88.5304C43.3944 89.9593 39.3815 89.9593 36.9063 88.5304L35.6282 87.7925ZM23.7063 77.6758C22.1593 78.5689 22.1593 80.0168 23.7063 80.9099L24.9318 81.6174C26.4788 82.5105 28.9869 82.5105 30.5339 81.6174L31.7594 80.9099C33.3063 80.0168 33.3063 78.5689 31.7594 77.6758L30.5339 76.9683C28.9869 76.0752 26.4788 76.0752 24.9318 76.9683L23.7063 77.6758ZM37.3614 76.9683C35.8145 76.0752 35.8145 74.6272 37.3614 73.7342L38.5869 73.0267C40.1339 72.1336 42.642 72.1336 44.189 73.0266L45.4145 73.7342C46.9615 74.6272 46.9615 76.0752 45.4145 76.9683L44.189 77.6758C42.642 78.5688 40.1339 78.5688 38.5869 77.6758L37.3614 76.9683ZM85.1544 77.6757C83.6074 78.5688 83.6074 80.0168 85.1544 80.9098L86.3799 81.6173C87.9268 82.5104 90.4349 82.5104 91.9819 81.6173L93.2074 80.9098C94.7544 80.0168 94.7544 78.5688 93.2074 77.6757L91.9819 76.9682C90.435 76.0751 87.9268 76.0751 86.3799 76.9682L85.1544 77.6757ZM71.4992 76.9682C69.9522 76.0751 69.9522 74.6272 71.4992 73.7341L72.7247 73.0266C74.2717 72.1335 76.7798 72.1335 78.3268 73.0266L79.5523 73.7341C81.0992 74.6272 81.0992 76.0751 79.5523 76.9682L78.3268 77.6757C76.7798 78.5688 74.2717 78.5688 72.7247 77.6757L71.4992 76.9682ZM54.4304 67.8217C52.8834 68.7148 52.8834 70.1628 54.4304 71.0558L55.6559 71.7633C57.2029 72.6564 59.711 72.6564 61.2579 71.7633L62.4835 71.0558C64.0304 70.1628 64.0304 68.7148 62.4835 67.8217L61.258 67.1142C59.711 66.2211 57.2029 66.2211 55.6559 67.1142L54.4304 67.8217ZM52.6972 81.8801C50.2221 80.4512 50.2221 78.1345 52.6972 76.7055L53.9753 75.9677C56.4504 74.5388 60.4634 74.5388 62.9385 75.9677L64.2166 76.7055C66.6918 78.1344 66.6917 80.4512 64.2166 81.8801L62.9385 82.618C60.4634 84.0469 56.4504 84.0469 53.9753 82.618L52.6972 81.8801Z" fill="currentColor"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M246.578 48.9553C248.075 46.8329 250.113 45.108 252.693 43.7815C255.325 42.402 258.24 41.7122 261.439 41.7122C265.206 41.7122 268.612 42.6403 271.656 44.4973C274.701 46.3545 277.1 49.0083 278.854 52.4573C280.609 55.8532 281.486 59.7534 281.486 64.1575C281.486 68.5613 280.609 72.514 278.854 76.0159C277.1 79.4649 274.675 82.1717 271.579 84.135C268.535 86.0452 265.155 87.0002 261.439 87.0002C258.137 87.0002 255.195 86.3365 252.615 85.01C250.087 83.6835 248.074 81.9855 246.578 79.9163V86.2834H237.755V27.385H246.578V48.9553ZM322.088 41.7131C326.938 41.7131 330.834 42.9865 333.775 45.5334C336.768 48.0272 338.368 51.4493 338.574 55.8H329.751C329.596 53.837 328.822 52.272 327.429 51.1047C326.035 49.9374 324.152 49.3538 321.778 49.3538C319.456 49.3538 317.676 49.8043 316.438 50.7063C315.199 51.6083 314.58 52.8026 314.58 54.2883C314.58 55.4555 314.993 56.4368 315.818 57.2327C316.644 58.0286 317.65 58.6662 318.837 59.1438C320.024 59.5683 321.779 60.1249 324.101 60.8147C327.197 61.6637 329.725 62.5396 331.686 63.4417C333.698 64.2906 335.427 65.564 336.872 67.262C338.317 68.9599 339.065 71.2155 339.116 74.0276C339.116 76.5213 338.445 78.75 337.104 80.7131C335.762 82.6763 333.853 84.2151 331.376 85.3293C328.951 86.4436 326.087 87.0002 322.784 87.0002C319.43 87.0002 316.412 86.3905 313.729 85.1702C311.097 83.8967 309.007 82.1988 307.459 80.0764C305.911 77.9009 305.086 75.4863 304.982 72.8333H314.115C314.27 74.6904 315.122 76.2561 316.67 77.5295C318.27 78.7498 320.256 79.3596 322.63 79.3596C325.107 79.3596 327.016 78.8821 328.357 77.927C329.751 76.9188 330.447 75.6455 330.447 74.1067C330.447 72.4618 329.673 71.2415 328.125 70.4456C326.629 69.6497 324.229 68.7737 320.927 67.8186C317.728 66.9166 315.122 66.0416 313.109 65.1926C311.097 64.3436 309.342 63.0433 307.846 61.2922C306.401 59.5412 305.679 57.2326 305.679 54.3674C305.679 52.0329 306.35 49.9104 307.691 48.0002C309.033 46.0371 310.942 44.4983 313.419 43.384C315.947 42.2698 318.837 41.7131 322.088 41.7131ZM391.315 41.7131C394.669 41.7132 397.585 42.4029 400.062 43.7825C402.59 45.1089 404.602 46.78 406.099 48.7961V42.429H415V86.2844H406.099V79.7581C404.602 81.8272 402.564 83.5514 399.984 84.9309C397.404 86.3105 394.463 87.0002 391.16 87.0002C387.497 87.0002 384.143 86.0451 381.099 84.135C378.054 82.1717 375.628 79.4658 373.822 76.0168C372.068 72.5148 371.19 68.5615 371.19 64.1575C371.19 59.7534 372.068 55.8532 373.822 52.4573C375.628 49.0614 378.054 46.4355 381.099 44.5784C384.195 42.6682 387.6 41.7131 391.315 41.7131ZM197.507 66.8616C197.507 70.7881 198.462 73.8133 200.371 75.9358C202.28 78.005 204.886 79.0393 208.188 79.0393C211.491 79.0393 214.097 78.005 216.006 75.9358C217.967 73.8133 218.947 70.7881 218.947 66.8616V42.427H227.771V86.2825H218.947V81.1086C217.554 82.9127 215.723 84.3462 213.452 85.4075C211.233 86.4156 208.859 86.9192 206.331 86.9192C202.977 86.9192 199.958 86.2034 197.274 84.7708C194.643 83.3381 192.553 81.2148 191.005 78.4026C189.509 75.5904 188.761 72.1945 188.761 68.2151V42.427H197.507V66.8616ZM155.477 30.2502C161.204 30.2502 166.288 31.7098 170.726 34.6282C175.215 37.4935 178.465 41.5791 180.478 46.885H169.874C168.481 43.9666 166.545 41.7913 164.068 40.3586C161.592 38.926 158.727 38.2092 155.477 38.2092C151.916 38.2093 148.743 39.0322 145.957 40.677C143.171 42.3219 140.977 44.6825 139.377 47.76C137.829 50.8375 137.056 54.4195 137.056 58.5051C137.056 62.5907 137.829 66.1727 139.377 69.2502C140.977 72.3278 143.171 74.7154 145.957 76.4133C148.743 78.0581 151.916 78.881 155.477 78.8811C158.727 78.8811 161.592 78.1643 164.068 76.7317C166.545 75.299 168.481 73.1237 169.874 70.2053H180.478C178.465 75.5114 175.215 79.5978 170.726 82.4631C166.288 85.3285 161.204 86.761 155.477 86.761C150.42 86.7609 145.802 85.5667 141.622 83.179C137.442 80.7381 134.115 77.3685 131.638 73.0706C129.212 68.7726 127.999 63.9174 127.999 58.5051C127.999 53.093 129.212 48.2376 131.638 43.9397C134.115 39.6419 137.443 36.2991 141.622 33.9114C145.853 31.4706 150.471 30.2503 155.477 30.2502ZM297.378 86.2864H288.554V42.4309H297.378V86.2864ZM357.287 42.428H367.658V49.8303H357.287V74.1057C357.287 75.7506 357.648 76.9449 358.37 77.6877C359.144 78.3775 360.434 78.7219 362.24 78.7219H367.658V86.2834H360.692C356.719 86.2834 353.674 85.3284 351.559 83.4182C349.443 81.508 348.386 78.4036 348.386 74.1057V49.8303H343.354V42.428H348.386V31.5237H357.287V42.428ZM393.173 49.592C390.903 49.5921 388.787 50.1758 386.826 51.343C384.865 52.4573 383.266 54.1291 382.027 56.3577C380.841 58.5331 380.247 61.1331 380.247 64.1575C380.247 67.1819 380.841 69.8349 382.027 72.1165C383.266 74.3981 384.865 76.1499 386.826 77.3704C388.839 78.5376 390.954 79.1213 393.173 79.1213C395.443 79.1213 397.559 78.5375 399.52 77.3704C401.48 76.203 403.054 74.5042 404.241 72.2756C405.48 69.9941 406.099 67.341 406.099 64.3167C406.099 61.2922 405.48 58.6653 404.241 56.4368C403.054 54.2084 401.48 52.5103 399.52 51.343C397.559 50.1758 395.443 49.592 393.173 49.592ZM259.505 49.592C257.286 49.592 255.17 50.1757 253.157 51.343C251.197 52.5104 249.597 54.2083 248.358 56.4368C247.172 58.6653 246.578 61.2923 246.578 64.3167C246.578 67.341 247.172 69.9941 248.358 72.2756C249.597 74.5041 251.196 76.202 253.157 77.3694C255.17 78.5367 257.286 79.1204 259.505 79.1204C261.775 79.1203 263.891 78.5367 265.852 77.3694C267.864 76.149 269.464 74.398 270.65 72.1165C271.889 69.8349 272.508 67.1818 272.508 64.1575C272.508 61.133 271.889 58.5322 270.65 56.3567C269.464 54.1283 267.864 52.4573 265.852 51.343C263.891 50.1757 261.775 49.5921 259.505 49.592ZM293.043 25.0002C294.591 25.0002 295.908 25.5578 296.991 26.6721C298.075 27.7863 298.616 29.1661 298.616 30.8108C298.616 32.4555 298.075 33.8353 296.991 34.9495C295.908 36.0638 294.591 36.6204 293.043 36.6204C291.444 36.6203 290.102 36.0636 289.019 34.9495C287.935 33.8352 287.393 32.4556 287.393 30.8108C287.393 29.166 287.935 27.7864 289.019 26.6721C290.102 25.5579 291.443 25.0003 293.043 25.0002Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<!-- =========================================================================
+     NAV
+     ========================================================================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Cubista home">
+      <svg class="nav-logo-svg" viewBox="0 0 415 112" role="img" aria-label="Cubista" focusable="false"><use href="#cubista-logo"/></svg>
+    </a>
+    <nav class="nav-links">
+      <a href="#product" class="nav-link">Product</a>
+      <a href="#team" class="nav-link">Team</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#pilot" class="btn btn-primary">Request a Pilot</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================================
+     HERO
+     ========================================================================= -->
+<section class="hero">
+  <div class="hero-lower">
+    <div class="hero-content">
+      <h1 class="display-xl hero-headline">The AI brain for dealmakers.</h1>
+      <p class="subhead hero-sub">Cubista surfaces every <span class="squiggle">intro</span>, <span class="squiggle">relationship</span>, and <span class="squiggle">opportunity</span> without changing the way you work.</p>
+      <a href="#product" class="btn btn-primary hero-cta" style="margin-top: 28px;">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     HERO TIMELINE ANIMATION
+     ========================================================================= -->
+<section class="section timeline-section">
+  <div class="container">
+    <div class="demo-box reveal">
+        <!-- Chat header -->
+        <div class="demo-header">
+          <div class="demo-header-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <!-- Chat body -->
+        <div class="demo-chat-body">
+          <!-- User prompt -->
+          <div class="demo-prompt">my meeting with Bart got cancelled, who should I meet with instead?</div>
+
+          <div class="demo-steps">
+            <!-- Step 1: CRM -->
+            <div class="demo-step">
+              <div class="demo-step-icon"><i class="ph-light ph-users" aria-hidden="true"></i></div>
+              <div class="demo-step-body">
+                <div class="demo-step-label">CRM</div>
+                <p class="demo-thinking">3 prospects in Boston with no recent activity...</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Email -->
+            <div class="demo-step">
+              <div class="demo-step-icon"><i class="ph-light ph-envelope-simple" aria-hidden="true"></i></div>
+              <div class="demo-step-body">
+                <div class="demo-step-label">Email</div>
+                <p class="demo-thinking">Ethan Morales, met at conference, no follow-up...</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Fund data -->
+            <div class="demo-step">
+              <div class="demo-step-icon"><i class="ph-light ph-chart-line-up" aria-hidden="true"></i></div>
+              <div class="demo-step-body">
+                <div class="demo-step-label">Fund data</div>
+                <p class="demo-thinking">$350M capacity remaining in Fund V...</p>
+              </div>
+            </div>
+
+            <!-- Step 4: Market intel -->
+            <div class="demo-step">
+              <div class="demo-step-icon"><i class="ph-light ph-globe" aria-hidden="true"></i></div>
+              <div class="demo-step-body">
+                <div class="demo-step-label">Market intel</div>
+                <p class="demo-thinking">$50M&ndash;$150M check size, strong fit...</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Result: chatbot response -->
+          <div class="demo-result">
+            <p>You should reach out to <strong>Ethan Morales</strong>, Head of PE at Beacon State Fund in Boston. He's a strong fit with a $50M&ndash;$150M check size and you haven't followed up since the conference.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     SECTION: HIDDEN NETWORK — contacts surface on hover
+     ========================================================================= -->
+<section class="section network-section">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom: 48px;">
+      <h2 class="display-lg" style="text-wrap: balance; max-width: 800px; margin: 0 auto;">Your best opportunities are hidden beneath the surface.</h2>
+    </div>
+    <div class="network-graph reveal">
+      <!-- Connection lines drawn via CSS/SVG -->
+      <svg class="network-lines" viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="450" y1="180" x2="150" y2="80" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
+        <line x1="450" y1="180" x2="750" y2="80" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
+        <line x1="450" y1="180" x2="260" y2="320" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
+        <line x1="450" y1="180" x2="640" y2="320" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
+        <line x1="150" y1="80" x2="260" y2="320" stroke="rgba(30,64,175,0.06)" stroke-width="1"/>
+        <line x1="750" y1="80" x2="640" y2="320" stroke="rgba(30,64,175,0.06)" stroke-width="1"/>
+        <line x1="450" y1="180" x2="80" y2="260" stroke="rgba(30,64,175,0.08)" stroke-width="1"/>
+        <line x1="450" y1="180" x2="820" y2="260" stroke="rgba(30,64,175,0.08)" stroke-width="1"/>
+      </svg>
+
+      <!-- Center node (you) -->
+      <div class="net-node net-node-center" style="left:50%;top:42%;">
+        <div class="net-avatar net-you">You</div>
+      </div>
+
+      <!-- Submerged contacts -->
+      <div class="net-node net-submerged" style="left:16.6%;top:19%;">
+        <div class="net-avatar">SL</div>
+        <div class="net-card">
+          <strong>Sarah Lopez</strong>
+          <span>Dir. of PE, Glenford Endowment</span>
+          <span class="net-card-detail">IC reviewing Q2 2026</span>
+        </div>
+      </div>
+
+      <div class="net-node net-submerged" style="left:83.3%;top:19%;">
+        <div class="net-avatar">EM</div>
+        <div class="net-card">
+          <strong>Ethan Morales</strong>
+          <span>Head of PE, Beacon State Fund</span>
+          <span class="net-card-detail">$50M–$150M check, no outreach yet</span>
+        </div>
+      </div>
+
+      <div class="net-node net-submerged" style="left:28.8%;top:76%;">
+        <div class="net-avatar">JC</div>
+        <div class="net-card">
+          <strong>James Calloway</strong>
+          <span>CIO, Norwood Endowment</span>
+          <span class="net-card-detail">Open to conversation Q2</span>
+        </div>
+      </div>
+
+      <div class="net-node net-submerged" style="left:71.1%;top:76%;">
+        <div class="net-avatar">WT</div>
+        <div class="net-card">
+          <strong>William Torres</strong>
+          <span>Head of Alts, Carver Pension</span>
+          <span class="net-card-detail">Reviewing new managers for 2026</span>
+        </div>
+      </div>
+
+      <div class="net-node net-submerged" style="left:8.8%;top:62%;">
+        <div class="net-avatar">OA</div>
+        <div class="net-card">
+          <strong>Omar Al-Saleh</strong>
+          <span>Head PE, Sovereign Horizons</span>
+          <span class="net-card-detail">Active mandate, healthcare focus</span>
+        </div>
+      </div>
+
+      <div class="net-node net-submerged" style="left:91.1%;top:62%;">
+        <div class="net-avatar">NP</div>
+        <div class="net-card">
+          <strong>Natalie Park</strong>
+          <span>Alt Inv Director, Bayview Insurance</span>
+          <span class="net-card-detail">$20M–$40M check, prefers co-invest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     SECTION: SOLUTION PILLARS — heading retained, cards removed
+     ========================================================================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom: 24px;">
+      <h2 class="display-lg" style="text-wrap: balance; max-width: 920px; margin: 0 auto;">One connected, queryable view across every system <span class="accent">your team already uses.</span></h2>
+    </div>
+    <div class="manifest-wrap reveal">
+      <div class="manifest-stage">
+        <svg class="manifest-svg" viewBox="0 0 920 380" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-label="Five sources flow into one connected, queryable view">
+          <!-- Output line: from trunk UP to headline above -->
+          <path class="m-output" d="M 460 160 L 460 48"/>
+
+          <!-- Horizontal trunk: spans all input columns -->
+          <path class="m-trunk" d="M 120 160 L 800 160"/>
+
+          <!-- Vertical drop lines: trunk DOWN to each input column -->
+          <path class="m-connector" d="M 120 160 L 120 270"/>
+          <path class="m-connector" d="M 290 160 L 290 270"/>
+          <path class="m-connector" d="M 460 160 L 460 270"/>
+          <path class="m-connector" d="M 630 160 L 630 270"/>
+          <path class="m-connector m-connector-context" d="M 800 160 L 800 270"/>
+
+        </svg>
+
+        <div class="m-input" style="left: 13.04%; top: 73%;">
+          <i class="ph-light ph-users" aria-hidden="true"></i><span>CRM</span>
+        </div>
+        <div class="m-input" style="left: 31.52%; top: 73%;">
+          <i class="ph-light ph-envelope-simple" aria-hidden="true"></i><span>Email</span>
+        </div>
+        <div class="m-input" style="left: 50%; top: 73%;">
+          <i class="ph-light ph-chart-line-up" aria-hidden="true"></i><span>Fund data</span>
+        </div>
+        <div class="m-input" style="left: 68.48%; top: 73%;">
+          <i class="ph-light ph-globe" aria-hidden="true"></i><span>Market intel</span>
+        </div>
+        <div class="m-input m-input-context" style="left: 86.96%; top: 73%;">
+          <span>Your relationship context</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =========================================================================
+     SECTION: PUT YOUR DATA TO USE (ALTERNATING ROWS)
+     ========================================================================= -->
+<section class="section section-sand" id="product">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 class="display-lg">Get the answers you need, <span class="accent">instantly.</span></h2>
+    </div>
+  </div>
+
+    <div class="feature-rows">
+
+      <!-- Row 1: Quick Data Access — copy LEFT, chat RIGHT -->
+      <div class="feature-row feature-row-reverse reveal">
+        <div class="feature-visual">
+          <div class="chat-card">
+            <div class="chat-user-msg">What do we know about Bart Smith at NYU?</div>
+            <div class="chat-ai-msg">
+              <div class="chat-ai-header">
+                <div class="chat-avatar">BS</div>
+                <div>
+                  <div class="chat-name">Bart Smith</div>
+                  <div class="chat-role">Dir. of Investments &middot; NYU Endowment</div>
+                </div>
+              </div>
+              <div class="chat-ai-body">
+                <p>Last met 3 days ago at Stanwich for lunch. He&rsquo;s actively looking at an <strong>evergreen mandate</strong> targeting Q3 close.</p>
+                <p>Open to co-invest sleeve. Wants quarterly reporting cadence. Connected via <strong>Fred Jones</strong> and <strong>Janet Frye</strong>.</p>
+              </div>
+              <div class="chat-sources">
+                <span><i class="ph-light ph-users" aria-hidden="true"></i>CRM</span>
+                <span><i class="ph-light ph-envelope-simple" aria-hidden="true"></i>Email</span>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <span class="chat-input-text">Talk with Cubista</span>
+              <div class="chat-input-icons">
+                <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" class="chat-icon-plus"><line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/></svg>
+                <div class="chat-voice">
+                  <svg viewBox="0 0 18 18" fill="none" stroke="var(--royal)" stroke-width="1.5"><line x1="3" y1="9" x2="5" y2="9"/><line x1="6" y1="5" x2="6" y2="13"/><line x1="9" y1="3" x2="9" y2="15"/><line x1="12" y1="5" x2="12" y2="13"/><line x1="15" y1="9" x2="13" y2="9"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-eyebrow">Search</span>
+          <h3 class="feature-title">Quickly access your data</h3>
+          <p class="feature-desc">Use Cubista to quickly retrieve key contacts, relevant opportunities and fund data.</p>
+        </div>
+      </div>
+
+      <!-- Row 2: Meeting Prep — chat LEFT, copy RIGHT -->
+      <div class="feature-row reveal">
+        <div class="feature-visual">
+          <div class="chat-card">
+            <div class="chat-user-msg">Prep me for the Glenford Capital meeting Tuesday</div>
+            <div class="chat-ai-msg">
+              <div class="chat-badge">Meeting Brief &middot; Tues May 6, 2 PM</div>
+              <div class="chat-ai-body">
+                <p><strong>Glenford Capital</strong>, Fund III fully deployed. Raising Fund IV, $800M target.</p>
+                <p><strong>Key people:</strong> Mark Torres (GP) is direct and data-driven. Sarah Lin (IR) is your main contact.</p>
+                <p><strong>Their asks:</strong> Co-invest access, quarterly reporting, GP commitment details.</p>
+                <p><strong>Fund context:</strong> $25M LP in Fund II, returned 2.1x. Likely $40M check if terms hold.</p>
+                <p><strong>Rapport:</strong> Mark&rsquo;s daughter is at Stanford, same program as your son. Sarah runs the Boston Marathon.</p>
+              </div>
+              <div class="chat-sources">
+                <span><i class="ph-light ph-users" aria-hidden="true"></i>CRM</span>
+                <span><i class="ph-light ph-envelope-simple" aria-hidden="true"></i>Email</span>
+                <span><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>Calendar</span>
+                <span><i class="ph-light ph-chart-line-up" aria-hidden="true"></i>Fund data</span>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <span class="chat-input-text">Talk with Cubista</span>
+              <div class="chat-input-icons">
+                <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" class="chat-icon-plus"><line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/></svg>
+                <div class="chat-voice">
+                  <svg viewBox="0 0 18 18" fill="none" stroke="var(--royal)" stroke-width="1.5"><line x1="3" y1="9" x2="5" y2="9"/><line x1="6" y1="5" x2="6" y2="13"/><line x1="9" y1="3" x2="9" y2="15"/><line x1="12" y1="5" x2="12" y2="13"/><line x1="15" y1="9" x2="13" y2="9"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-eyebrow">Browse</span>
+          <h3 class="feature-title">Prep for a meeting</h3>
+          <p class="feature-desc">Walk into every meeting knowing the full context. Get a brief of past calls, mutual contacts, current commitments, and highest impact opportunities to get the most out of every touchpoint.</p>
+        </div>
+      </div>
+
+      <!-- Row 3: Uncover Hidden Opportunities — copy LEFT, chat RIGHT -->
+      <div class="feature-row feature-row-reverse reveal">
+        <div class="feature-visual">
+          <div class="chat-card">
+            <div class="chat-user-msg">I&rsquo;m in NYC next week. Who should I meet?</div>
+            <div class="chat-ai-msg">
+              <div class="chat-ai-body">
+                <p>I found <strong>3 warm intros</strong> that align with your active mandate:</p>
+              </div>
+              <div class="chat-opp-list">
+                <div class="chat-opp">
+                  <div class="chat-avatar">BS</div>
+                  <div class="chat-opp-info">
+                    <div class="chat-opp-name">Bart Smith <span>NYU Endowment</span></div>
+                    <div class="chat-opp-reason">Open lunch invite. Evergreen mandate active.</div>
+                  </div>
+                </div>
+                <div class="chat-opp">
+                  <div class="chat-avatar av2">JF</div>
+                  <div class="chat-opp-info">
+                    <div class="chat-opp-name">Janet Frye <span>Harvard Mgmt</span></div>
+                    <div class="chat-opp-reason">Warm intro via Fred Jones. New role since Q1.</div>
+                  </div>
+                </div>
+                <div class="chat-opp">
+                  <div class="chat-avatar av3">RM</div>
+                  <div class="chat-opp-info">
+                    <div class="chat-opp-name">Ravi Menon <span>MIT Inv. Mgmt</span></div>
+                    <div class="chat-opp-reason">Co-invest thesis aligns with Fund V sleeve.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-sources">
+                <span><i class="ph-light ph-users" aria-hidden="true"></i>CRM</span>
+                <span><i class="ph-light ph-envelope-simple" aria-hidden="true"></i>Email</span>
+                <span><i class="ph-light ph-calendar-blank" aria-hidden="true"></i>Calendar</span>
+                <span><i class="ph-light ph-chart-line-up" aria-hidden="true"></i>Fund data</span>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <span class="chat-input-text">Talk with Cubista</span>
+              <div class="chat-input-icons">
+                <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" class="chat-icon-plus"><line x1="9" y1="3" x2="9" y2="15"/><line x1="3" y1="9" x2="15" y2="9"/></svg>
+                <div class="chat-voice">
+                  <svg viewBox="0 0 18 18" fill="none" stroke="var(--royal)" stroke-width="1.5"><line x1="3" y1="9" x2="5" y2="9"/><line x1="6" y1="5" x2="6" y2="13"/><line x1="9" y1="3" x2="9" y2="15"/><line x1="12" y1="5" x2="12" y2="13"/><line x1="15" y1="9" x2="13" y2="9"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <span class="feature-eyebrow">Suggest</span>
+          <h3 class="feature-title">Uncover hidden opportunities</h3>
+          <p class="feature-desc">Get a curated shortlist of warm intros, expiring mandates, and fund-deal matches that aren&rsquo;t visible anywhere else.</p>
+        </div>
+      </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================================
+     SECTION: FOUNDER QUOTE
+     ========================================================================= -->
+<section class="section founder-section">
+  <div class="container">
+    <figure class="founder-photo reveal">
+      <img src="assets/images/GregImage.webp" alt="Greg King ringing the Nasdaq bell, surrounded by his team and confetti">
+      <figcaption class="founder-overlay">
+        <div class="capture-overlay-inner">
+          <p class="founder-quote-text">&ldquo;I built Cubista because I was tired of losing the context of my relationships. I&rsquo;ve missed out on so many opportunities because I forget what or who was mentioned.&rdquo;</p>
+          <div class="founder-attribution">Greg King, Founder &amp; CEO</div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- =========================================================================
+     SECTION: SEAMLESS CAPTURE (DARK, INTERACTIVE)
+     ========================================================================= -->
+<section class="capture" id="capture">
+  <div class="capture-inner">
+    <div class="capture-header reveal">
+      <h2 class="display-lg">Capture relationship context <span class="accent">as it&rsquo;s made.</span></h2>
+    </div>
+
+      <div class="capture-tabs reveal">
+        <div class="capture-tabs-list" role="tablist" aria-orientation="vertical">
+          <div class="capture-tab active" data-tab="record" role="tab" aria-selected="true">
+            <div class="capture-tab-header">
+              <span class="capture-tab-name">Record</span>
+              <svg class="capture-tab-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 8 11 13 6"/></svg>
+            </div>
+            <div class="capture-tab-detail"><p class="capture-tab-action">Hit record. Cubista listens for who&rsquo;s in the room, what&rsquo;s being committed, and what happens next. By the time you leave, the meeting context is captured, stored and ready to be actioned on.</p></div>
+          </div>
+          <div class="capture-tab" data-tab="dictate" role="tab" aria-selected="false">
+            <div class="capture-tab-header">
+              <span class="capture-tab-name">Dictate</span>
+              <svg class="capture-tab-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 8 11 13 6"/></svg>
+            </div>
+            <div class="capture-tab-detail"><p class="capture-tab-action">Speak naturally, and Cubista turns the drive home into a clean CRM note. Names, firms, dollar amounts, next steps and personal connections are captured and sent to your analyst.</p></div>
+          </div>
+          <div class="capture-tab" data-tab="upload" role="tab" aria-selected="false">
+            <div class="capture-tab-header">
+              <span class="capture-tab-name">Upload</span>
+              <svg class="capture-tab-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 8 11 13 6"/></svg>
+            </div>
+            <div class="capture-tab-detail"><p class="capture-tab-action">Take a photo of a business card or upload a list of conference attendees. Cubista will store the contacts and highlight any relevant opportunities.</p></div>
+          </div>
+        </div>
+      <div class="capture-tabs-panels">
+        <!-- Meeting recording: live transcription with waveform -->
+        <div class="capture-panel active" data-panel="record" role="tabpanel">
+          <img src="assets/images/meeting-recordingV2.webp" alt="Phone recording a meeting on a conference table" class="viz-rec-photo" loading="lazy">
+        </div>
+
+        <!-- Dictate: voice memo photo -->
+        <div class="capture-panel" data-panel="dictate" role="tabpanel">
+          <img src="assets/images/dictation.webp" alt="Dictating a voice memo into Cubista" class="viz-dict-photo" loading="lazy">
+        </div>
+
+        <!-- Upload: business card photo -->
+        <div class="capture-panel" data-panel="upload" role="tabpanel">
+          <img src="assets/images/biz-card.webp" alt="Business card being uploaded to Cubista" class="viz-upload-photo" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Data flow constellation -->
+    <div class="dataflow reveal">
+      <svg class="dataflow-svg" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgba(30,64,175,0.15)"/>
+            <stop offset="50%" stop-color="rgba(30,64,175,0.4)"/>
+            <stop offset="100%" stop-color="rgba(30,64,175,0.15)"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <linearGradient id="line-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.6"/>
+          </linearGradient>
+          <linearGradient id="line-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.2"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Flow lines: sources → center -->
+        <path class="flow-line fl-1" d="M 120 80 C 250 80, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
+        <path class="flow-line fl-2" d="M 100 200 C 220 200, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
+        <path class="flow-line fl-3" d="M 120 320 C 250 320, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
+        <path class="flow-line fl-4" d="M 160 140 C 270 140, 340 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
+
+        <!-- Flow lines: center → output -->
+        <path class="flow-line fl-5" d="M 450 200 C 580 200, 650 100, 780 100" stroke="url(#line-grad-2)" stroke-width="1.5" fill="none"/>
+        <path class="flow-line fl-6" d="M 450 200 C 580 200, 650 300, 780 300" stroke="url(#line-grad-2)" stroke-width="1.5" fill="none"/>
+
+        <!-- Animated particles on paths -->
+        <circle class="particle p-1" r="3" fill="#3B6DE0" filter="url(#glow)">
+          <animateMotion dur="3s" repeatCount="indefinite" path="M 120 80 C 250 80, 320 200, 450 200"/>
+        </circle>
+        <circle class="particle p-2" r="3" fill="#3B6DE0" filter="url(#glow)">
+          <animateMotion dur="3.4s" repeatCount="indefinite" path="M 100 200 C 220 200, 320 200, 450 200"/>
+        </circle>
+        <circle class="particle p-3" r="3" fill="#3B6DE0" filter="url(#glow)">
+          <animateMotion dur="3.8s" repeatCount="indefinite" path="M 120 320 C 250 320, 320 200, 450 200"/>
+        </circle>
+        <circle class="particle p-4" r="3" fill="#3B6DE0" filter="url(#glow)">
+          <animateMotion dur="3.2s" repeatCount="indefinite" path="M 160 140 C 270 140, 340 200, 450 200"/>
+        </circle>
+        <circle class="particle p-5" r="2.5" fill="#1E40AF" filter="url(#glow)">
+          <animateMotion dur="2.8s" repeatCount="indefinite" path="M 450 200 C 580 200, 650 100, 780 100"/>
+        </circle>
+        <circle class="particle p-6" r="2.5" fill="#1E40AF" filter="url(#glow)">
+          <animateMotion dur="3.1s" repeatCount="indefinite" path="M 450 200 C 580 200, 650 300, 780 300"/>
+        </circle>
+
+        <!-- Source nodes (left) -->
+        <g class="df-node">
+          <circle cx="120" cy="80" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="120" y="76" text-anchor="middle" fill="#0A1533" font-size="16" font-family="var(--font-sans)">
+            <tspan class="ph-light ph-users" font-family="Phosphor" font-size="20">&#xE9A3;</tspan>
+          </text>
+          <text x="120" y="94" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">CRM</text>
+        </g>
+        <g class="df-node">
+          <circle cx="100" cy="200" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="100" y="196" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
+            <tspan font-size="20">&#9993;</tspan>
+          </text>
+          <text x="100" y="214" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">Email</text>
+        </g>
+        <g class="df-node">
+          <circle cx="120" cy="320" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="120" y="316" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
+            <tspan font-size="20">&#128197;</tspan>
+          </text>
+          <text x="120" y="334" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">Calendar</text>
+        </g>
+        <g class="df-node">
+          <circle cx="160" cy="140" r="28" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="160" y="136" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
+            <tspan font-size="18">&#128200;</tspan>
+          </text>
+          <text x="160" y="152" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Fund data</text>
+        </g>
+
+        <!-- Center hub: Cubista -->
+        <circle cx="450" cy="200" r="52" fill="var(--navy)" class="hub-ring"/>
+        <circle cx="450" cy="200" r="48" fill="var(--navy)"/>
+        <text x="450" y="205" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.04em">CUBISTA</text>
+
+        <!-- Output nodes (right) -->
+        <g class="df-node">
+          <circle cx="780" cy="100" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="780" y="96" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
+            <tspan font-size="18">&#128161;</tspan>
+          </text>
+          <text x="780" y="114" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Insights</text>
+        </g>
+        <g class="df-node">
+          <circle cx="780" cy="300" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
+          <text x="780" y="296" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
+            <tspan font-size="18">&#128640;</tspan>
+          </text>
+          <text x="780" y="314" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Actions</text>
+        </g>
+
+        <!-- Subtle ambient ring around hub -->
+        <circle cx="450" cy="200" r="64" fill="none" stroke="rgba(30,64,175,0.08)" stroke-width="1" stroke-dasharray="4 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 450 200" to="360 450 200" dur="30s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="450" cy="200" r="80" fill="none" stroke="rgba(30,64,175,0.04)" stroke-width="1" stroke-dasharray="2 6">
+          <animateTransform attributeName="transform" type="rotate" from="360 450 200" to="0 450 200" dur="45s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================================
+     SECTION: TEAM
+     ========================================================================= -->
+<section class="section section-sand" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 class="display-lg">Leadership team</h2>
+    </div>
+    <div class="team-grid">
+
+      <article class="team-member reveal reveal-1">
+        <div class="tm-photo"><img src="assets/images/greg-king.webp" alt="Greg King" loading="lazy"></div>
+        <h3 class="tm-name">Greg King, CFA</h3>
+        <div class="tm-title">Chief Executive Officer</div>
+        <p class="tm-cred">Founder of REX Shares ($8B+ AUM) and VelocityShares (acquired 2014).</p>
+      </article>
+
+      <article class="team-member reveal reveal-2">
+        <div class="tm-photo"><img src="assets/images/amanda-ivie.webp" alt="Amanda Ivie" loading="lazy"></div>
+        <h3 class="tm-name">Amanda Ivie</h3>
+        <div class="tm-title">Chief Revenue Officer</div>
+        <p class="tm-cred">Ten-year revenue leader at Snap. Built Fortune 100 brand partnerships at scale.</p>
+      </article>
+
+      <article class="team-member reveal reveal-3">
+        <div class="tm-photo"><img src="assets/images/hugh-myers.webp" alt="Hugh Myers" loading="lazy"></div>
+        <h3 class="tm-name">Hugh Myers</h3>
+        <div class="tm-title">Chief Technology Officer</div>
+        <p class="tm-cred">Cofounder of Snappt (9-figure exit). Formerly Symantec, F5, Siemens.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     SECTION: CTA (DARK, echoes capture)
+     ========================================================================= -->
+<section class="cta-section" id="pilot">
+  <div class="container cta-inner">
+    <h2 class="display-lg on-dark cta-headline">Request a pilot.</h2>
+    <a href="mailto:pilot@cubista.com" class="btn btn-primary btn-lg cta-btn" style="margin-top: 32px;">Get Started</a>
+  </div>
+</section>
+
+<!-- =========================================================================
+     FOOTER (minimal, one-page)
+     ========================================================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <svg class="footer-logo-svg" viewBox="0 0 415 112" role="img" aria-label="Cubista" focusable="false"><use href="#cubista-logo"/></svg>
+        </div>
+        <p class="footer-tagline">Relationship intelligence for private equity.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:hello@cubista.com" class="footer-contact">hello@cubista.com</a>
+        <a href="mailto:pilot@cubista.com" class="footer-contact">pilot@cubista.com</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div>&copy; 2026 Cubista. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================================
+     SCRIPTS
+     ========================================================================= -->
+<script src="js/main.js" defer></script>
+</body>
+</html>
