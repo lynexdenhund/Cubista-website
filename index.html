@@ -125,112 +125,30 @@
 </section>
 
 <!-- =========================================================================
-     SECTION: HIDDEN NETWORK — contacts surface on hover
-     ========================================================================= -->
-<section class="section network-section">
-  <div class="container">
-    <div class="section-head reveal" style="margin-bottom: 48px;">
-      <h2 class="display-lg" style="text-wrap: balance; max-width: 800px; margin: 0 auto;">Your best opportunities are hidden beneath the surface.</h2>
-    </div>
-    <div class="network-graph reveal">
-      <!-- Connection lines drawn via CSS/SVG -->
-      <svg class="network-lines" viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="450" y1="180" x2="150" y2="80" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
-        <line x1="450" y1="180" x2="750" y2="80" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
-        <line x1="450" y1="180" x2="260" y2="320" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
-        <line x1="450" y1="180" x2="640" y2="320" stroke="rgba(30,64,175,0.12)" stroke-width="1.5"/>
-        <line x1="150" y1="80" x2="260" y2="320" stroke="rgba(30,64,175,0.06)" stroke-width="1"/>
-        <line x1="750" y1="80" x2="640" y2="320" stroke="rgba(30,64,175,0.06)" stroke-width="1"/>
-        <line x1="450" y1="180" x2="80" y2="260" stroke="rgba(30,64,175,0.08)" stroke-width="1"/>
-        <line x1="450" y1="180" x2="820" y2="260" stroke="rgba(30,64,175,0.08)" stroke-width="1"/>
-      </svg>
-
-      <!-- Center node (you) -->
-      <div class="net-node net-node-center" style="left:50%;top:42%;">
-        <div class="net-avatar net-you">You</div>
-      </div>
-
-      <!-- Submerged contacts -->
-      <div class="net-node net-submerged" style="left:16.6%;top:19%;">
-        <div class="net-avatar">SL</div>
-        <div class="net-card">
-          <strong>Sarah Lopez</strong>
-          <span>Dir. of PE, Glenford Endowment</span>
-          <span class="net-card-detail">IC reviewing Q2 2026</span>
-        </div>
-      </div>
-
-      <div class="net-node net-submerged" style="left:83.3%;top:19%;">
-        <div class="net-avatar">EM</div>
-        <div class="net-card">
-          <strong>Ethan Morales</strong>
-          <span>Head of PE, Beacon State Fund</span>
-          <span class="net-card-detail">$50M–$150M check, no outreach yet</span>
-        </div>
-      </div>
-
-      <div class="net-node net-submerged" style="left:28.8%;top:76%;">
-        <div class="net-avatar">JC</div>
-        <div class="net-card">
-          <strong>James Calloway</strong>
-          <span>CIO, Norwood Endowment</span>
-          <span class="net-card-detail">Open to conversation Q2</span>
-        </div>
-      </div>
-
-      <div class="net-node net-submerged" style="left:71.1%;top:76%;">
-        <div class="net-avatar">WT</div>
-        <div class="net-card">
-          <strong>William Torres</strong>
-          <span>Head of Alts, Carver Pension</span>
-          <span class="net-card-detail">Reviewing new managers for 2026</span>
-        </div>
-      </div>
-
-      <div class="net-node net-submerged" style="left:8.8%;top:62%;">
-        <div class="net-avatar">OA</div>
-        <div class="net-card">
-          <strong>Omar Al-Saleh</strong>
-          <span>Head PE, Sovereign Horizons</span>
-          <span class="net-card-detail">Active mandate, healthcare focus</span>
-        </div>
-      </div>
-
-      <div class="net-node net-submerged" style="left:91.1%;top:62%;">
-        <div class="net-avatar">NP</div>
-        <div class="net-card">
-          <strong>Natalie Park</strong>
-          <span>Alt Inv Director, Bayview Insurance</span>
-          <span class="net-card-detail">$20M–$40M check, prefers co-invest</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================================
      SECTION: SOLUTION PILLARS — heading retained, cards removed
      ========================================================================= -->
 <section class="section">
   <div class="container">
-    <div class="section-head reveal" style="margin-bottom: 24px;">
+    <div class="section-head reveal" style="margin-bottom: -12px;">
       <h2 class="display-lg" style="text-wrap: balance; max-width: 920px; margin: 0 auto;">One connected, queryable view across every system <span class="accent">your team already uses.</span></h2>
     </div>
     <div class="manifest-wrap reveal">
       <div class="manifest-stage">
         <svg class="manifest-svg" viewBox="0 0 920 380" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-label="Five sources flow into one connected, queryable view">
-          <!-- Output line: from trunk UP to headline above -->
-          <path class="m-output" d="M 460 160 L 460 48"/>
+          <!-- Output line: trunk up to headline -->
+          <path class="m-output" d="M 460 160 L 460 52"/>
+          <circle cx="460" cy="48" r="5" fill="rgba(10,21,51,0.2)"/>
 
-          <!-- Horizontal trunk: spans all input columns -->
-          <path class="m-trunk" d="M 120 160 L 800 160"/>
+          <!-- Main U-shape: CRM up, round left corner, across trunk, round right corner, down to context -->
+          <path class="m-trunk" d="M 120 270 L 120 176 Q 120 160 136 160 L 784 160 Q 800 160 800 176 L 800 270"/>
 
-          <!-- Vertical drop lines: trunk DOWN to each input column -->
-          <path class="m-connector" d="M 120 160 L 120 270"/>
+          <!-- Context dashed overlay on right leg -->
+          <path class="m-connector-context" d="M 784 160 Q 800 160 800 176 L 800 270"/>
+
+          <!-- Internal vertical drops -->
           <path class="m-connector" d="M 290 160 L 290 270"/>
           <path class="m-connector" d="M 460 160 L 460 270"/>
           <path class="m-connector" d="M 630 160 L 630 270"/>
-          <path class="m-connector m-connector-context" d="M 800 160 L 800 270"/>
 
         </svg>
 
@@ -411,10 +329,10 @@
 <section class="section founder-section">
   <div class="container">
     <figure class="founder-photo reveal">
-      <img src="assets/images/GregImage.webp" alt="Greg King ringing the Nasdaq bell, surrounded by his team and confetti">
+      <img src="assets/images/GregImage.jpeg" alt="Greg King ringing the Nasdaq bell, surrounded by his team and confetti">
       <figcaption class="founder-overlay">
         <div class="capture-overlay-inner">
-          <p class="founder-quote-text">&ldquo;I built Cubista because I was tired of losing the context of my relationships. I&rsquo;ve missed out on so many opportunities because I forget what or who was mentioned.&rdquo;</p>
+          <p class="founder-quote-text">&ldquo;I built Cubista to capture the context that slips through the cracks in your network&mdash;the connections, patterns, and intel you didn&rsquo;t even know were there, and that usually gets lost. Cubista surfaces it and turns it into your most valuable asset.&rdquo;</p>
           <div class="founder-attribution">Greg King, Founder &amp; CEO</div>
         </div>
       </figcaption>
@@ -472,123 +390,110 @@
         </div>
       </div>
     </div>
+</div>
+</section>
 
     <!-- Data flow constellation -->
-    <div class="dataflow reveal">
-      <svg class="dataflow-svg" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-        <defs>
-          <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="rgba(30,64,175,0.15)"/>
-            <stop offset="50%" stop-color="rgba(30,64,175,0.4)"/>
-            <stop offset="100%" stop-color="rgba(30,64,175,0.15)"/>
-          </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-          </filter>
-          <linearGradient id="line-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.2"/>
-            <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.6"/>
-          </linearGradient>
-          <linearGradient id="line-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.2"/>
-          </linearGradient>
-        </defs>
+    <section class="section dataflow-section">
+      <div class="container">
+        <div class="dataflow reveal">
+          <svg class="dataflow-svg" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="line-in" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.35"/>
+              </linearGradient>
+              <linearGradient id="line-out" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.08"/>
+              </linearGradient>
+              <filter id="node-shadow">
+                <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="rgba(10,21,51,0.08)"/>
+              </filter>
+              <filter id="hub-glow">
+                <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="rgba(59,109,224,0.15)"/>
+              </filter>
+            </defs>
 
-        <!-- Flow lines: sources → center -->
-        <path class="flow-line fl-1" d="M 120 80 C 250 80, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
-        <path class="flow-line fl-2" d="M 100 200 C 220 200, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
-        <path class="flow-line fl-3" d="M 120 320 C 250 320, 320 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
-        <path class="flow-line fl-4" d="M 160 140 C 270 140, 340 200, 450 200" stroke="url(#line-grad-1)" stroke-width="1.5" fill="none"/>
+            <!-- Input flow lines -->
+            <path d="M 185 100 C 320 100, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
+            <path d="M 185 250 C 320 250, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
+            <path d="M 185 400 C 320 400, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
+            <path d="M 260 175 C 360 175, 430 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
 
-        <!-- Flow lines: center → output -->
-        <path class="flow-line fl-5" d="M 450 200 C 580 200, 650 100, 780 100" stroke="url(#line-grad-2)" stroke-width="1.5" fill="none"/>
-        <path class="flow-line fl-6" d="M 450 200 C 580 200, 650 300, 780 300" stroke="url(#line-grad-2)" stroke-width="1.5" fill="none"/>
+            <!-- Output flow lines -->
+            <path d="M 680 250 C 780 250, 860 130, 1010 130" stroke="url(#line-out)" stroke-width="1.5" fill="none"/>
+            <path d="M 680 250 C 780 250, 860 370, 1010 370" stroke="url(#line-out)" stroke-width="1.5" fill="none"/>
 
-        <!-- Animated particles on paths -->
-        <circle class="particle p-1" r="3" fill="#3B6DE0" filter="url(#glow)">
-          <animateMotion dur="3s" repeatCount="indefinite" path="M 120 80 C 250 80, 320 200, 450 200"/>
-        </circle>
-        <circle class="particle p-2" r="3" fill="#3B6DE0" filter="url(#glow)">
-          <animateMotion dur="3.4s" repeatCount="indefinite" path="M 100 200 C 220 200, 320 200, 450 200"/>
-        </circle>
-        <circle class="particle p-3" r="3" fill="#3B6DE0" filter="url(#glow)">
-          <animateMotion dur="3.8s" repeatCount="indefinite" path="M 120 320 C 250 320, 320 200, 450 200"/>
-        </circle>
-        <circle class="particle p-4" r="3" fill="#3B6DE0" filter="url(#glow)">
-          <animateMotion dur="3.2s" repeatCount="indefinite" path="M 160 140 C 270 140, 340 200, 450 200"/>
-        </circle>
-        <circle class="particle p-5" r="2.5" fill="#1E40AF" filter="url(#glow)">
-          <animateMotion dur="2.8s" repeatCount="indefinite" path="M 450 200 C 580 200, 650 100, 780 100"/>
-        </circle>
-        <circle class="particle p-6" r="2.5" fill="#1E40AF" filter="url(#glow)">
-          <animateMotion dur="3.1s" repeatCount="indefinite" path="M 450 200 C 580 200, 650 300, 780 300"/>
-        </circle>
+            <!-- Animated particles -->
+            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
+              <animateMotion dur="4s" repeatCount="indefinite" path="M 185 100 C 320 100, 420 250, 520 250"/>
+            </circle>
+            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
+              <animateMotion dur="4.5s" repeatCount="indefinite" path="M 185 250 C 320 250, 420 250, 520 250"/>
+            </circle>
+            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
+              <animateMotion dur="5s" repeatCount="indefinite" path="M 185 400 C 320 400, 420 250, 520 250"/>
+            </circle>
+            <circle r="3" fill="#3B6DE0" opacity="0.7">
+              <animateMotion dur="4.2s" repeatCount="indefinite" path="M 260 175 C 360 175, 430 250, 520 250"/>
+            </circle>
+            <circle r="3" fill="#1E40AF" opacity="0.6">
+              <animateMotion dur="3.5s" repeatCount="indefinite" path="M 680 250 C 780 250, 860 130, 1010 130"/>
+            </circle>
+            <circle r="3" fill="#1E40AF" opacity="0.6">
+              <animateMotion dur="3.8s" repeatCount="indefinite" path="M 680 250 C 780 250, 860 370, 1010 370"/>
+            </circle>
 
-        <!-- Source nodes (left) -->
-        <g class="df-node">
-          <circle cx="120" cy="80" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="120" y="76" text-anchor="middle" fill="#0A1533" font-size="16" font-family="var(--font-sans)">
-            <tspan class="ph-light ph-users" font-family="Phosphor" font-size="20">&#xE9A3;</tspan>
-          </text>
-          <text x="120" y="94" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">CRM</text>
-        </g>
-        <g class="df-node">
-          <circle cx="100" cy="200" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="100" y="196" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
-            <tspan font-size="20">&#9993;</tspan>
-          </text>
-          <text x="100" y="214" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">Email</text>
-        </g>
-        <g class="df-node">
-          <circle cx="120" cy="320" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="120" y="316" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
-            <tspan font-size="20">&#128197;</tspan>
-          </text>
-          <text x="120" y="334" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">Calendar</text>
-        </g>
-        <g class="df-node">
-          <circle cx="160" cy="140" r="28" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="160" y="136" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
-            <tspan font-size="18">&#128200;</tspan>
-          </text>
-          <text x="160" y="152" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Fund data</text>
-        </g>
+            <!-- Source nodes -->
+            <g filter="url(#node-shadow)">
+              <rect x="100" y="62" width="170" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="148" y="106" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128101;</text>
+              <text x="210" y="106" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">CRM</text>
+            </g>
+            <g filter="url(#node-shadow)">
+              <rect x="160" y="137" width="200" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="212" y="181" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128200;</text>
+              <text x="286" y="181" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Fund data</text>
+            </g>
+            <g filter="url(#node-shadow)">
+              <rect x="100" y="212" width="170" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="148" y="256" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#9993;&#65039;</text>
+              <text x="210" y="256" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Email</text>
+            </g>
+            <g filter="url(#node-shadow)">
+              <rect x="100" y="362" width="190" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="148" y="406" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128197;</text>
+              <text x="220" y="406" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Calendar</text>
+            </g>
 
-        <!-- Center hub: Cubista -->
-        <circle cx="450" cy="200" r="52" fill="var(--navy)" class="hub-ring"/>
-        <circle cx="450" cy="200" r="48" fill="var(--navy)"/>
-        <text x="450" y="205" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.04em">CUBISTA</text>
+            <!-- Center hub -->
+            <g filter="url(#hub-glow)">
+              <circle cx="600" cy="250" r="80" fill="var(--navy)"/>
+              <text x="600" y="244" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-weight="500" font-family="var(--font-sans)" letter-spacing="0.18em" text-transform="uppercase">POWERED BY AI</text>
+              <text x="600" y="268" text-anchor="middle" fill="#fff" font-size="18" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.06em">CUBISTA</text>
+            </g>
+            <!-- Orbiting ring -->
+            <circle cx="600" cy="250" r="100" fill="none" stroke="rgba(59,109,224,0.06)" stroke-width="1" stroke-dasharray="6 8">
+              <animateTransform attributeName="transform" type="rotate" from="0 600 250" to="360 600 250" dur="40s" repeatCount="indefinite"/>
+            </circle>
 
-        <!-- Output nodes (right) -->
-        <g class="df-node">
-          <circle cx="780" cy="100" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="780" y="96" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
-            <tspan font-size="18">&#128161;</tspan>
-          </text>
-          <text x="780" y="114" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Insights</text>
-        </g>
-        <g class="df-node">
-          <circle cx="780" cy="300" r="32" fill="#fff" stroke="rgba(30,64,175,0.15)" stroke-width="1.5"/>
-          <text x="780" y="296" text-anchor="middle" fill="#0A1533" font-size="10" font-weight="600" font-family="var(--font-sans)">
-            <tspan font-size="18">&#128640;</tspan>
-          </text>
-          <text x="780" y="314" text-anchor="middle" fill="#0A1533" font-size="9" font-weight="600" font-family="var(--font-sans)">Actions</text>
-        </g>
+            <!-- Output nodes -->
+            <g filter="url(#node-shadow)">
+              <rect x="930" y="92" width="180" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="978" y="136" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128161;</text>
+              <text x="1046" y="136" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Insights</text>
+            </g>
+            <g filter="url(#node-shadow)">
+              <rect x="930" y="332" width="180" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
+              <text x="978" y="376" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128640;</text>
+              <text x="1046" y="376" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Actions</text>
+            </g>
 
-        <!-- Subtle ambient ring around hub -->
-        <circle cx="450" cy="200" r="64" fill="none" stroke="rgba(30,64,175,0.08)" stroke-width="1" stroke-dasharray="4 4">
-          <animateTransform attributeName="transform" type="rotate" from="0 450 200" to="360 450 200" dur="30s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="450" cy="200" r="80" fill="none" stroke="rgba(30,64,175,0.04)" stroke-width="1" stroke-dasharray="2 6">
-          <animateTransform attributeName="transform" type="rotate" from="360 450 200" to="0 450 200" dur="45s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-
-  </div>
-</section>
+          </svg>
+        </div>
+      </div>
+    </section>
 
 
 <!-- =========================================================================
