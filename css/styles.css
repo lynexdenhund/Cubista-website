@@ -1659,10 +1659,10 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .feature-rows {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 24px var(--gutter) 0;
+  padding: 35px var(--gutter) 0;
   border-radius: 24px;
 }
 
@@ -2163,7 +2163,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 30px;
   padding-bottom: 44px;
   border-bottom: 1px solid var(--cream-divider);
 }
@@ -2378,7 +2378,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 65%;
+  width: 58%;
   padding: 0 40px;
 }
 .capture-tab {
@@ -2449,7 +2449,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   top: 0;
   right: 0;
   bottom: 0;
-  width: 35%;
+  width: 40%;
   background: var(--pale-blue);
   border-left: none;
   border-radius: 6px;
@@ -3105,10 +3105,10 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   font-style: normal;
   line-height: 1;
 }
-.m-input-context {
-  font-style: italic;
-  color: rgba(10, 21, 51, 0.65);
-}
+
+
+
+
 
 @media (max-width: 600px) {
   .m-input { font-size: 11px; gap: 5px; }
