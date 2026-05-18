@@ -2276,8 +2276,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   overflow: hidden;
   background: var(--pale-blue);
   border-radius: 12px;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  height: 520px;
 }
 @media (max-width: 768px) {
   .founder-photo { height: 360px; aspect-ratio: auto; border-radius: 10px; }
