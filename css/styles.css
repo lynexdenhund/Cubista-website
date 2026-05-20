@@ -102,7 +102,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
    on stacked-layout viewports (display-xl 28px vs display-lg 34px). */
 @media (max-width: 960px) {
   .display-xl { font-size: 40px; font-weight: 500; }
-  .display-lg { font-size: 27px; font-weight: 500; }
+  .display-lg { font-size: 27px; font-weight: 600; }
   .display-md { font-size: 24px; font-weight: 500; }
   .subhead { font-size: 17px; }
 }
@@ -113,7 +113,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 }
 .display-lg {
   font-size: clamp(29px, 3.6vw, 46px);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.08;
   letter-spacing: -0.028em;
   color: var(--navy);
@@ -771,7 +771,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .intel-card {
   background: #fff;
   border: 1px solid rgba(10, 21, 51, 0.1);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 20px 24px;
   box-shadow: 0 2px 12px -4px rgba(10, 21, 51, 0.08);
 }
@@ -1030,8 +1030,8 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 }
 
 .t-label {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
   color: var(--navy);
   line-height: 1.3;
   letter-spacing: -0.015em;
@@ -1040,15 +1040,15 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .user-prompt {
   background: rgba(10, 21, 51, 0.05);
   border: 1px solid rgba(10, 21, 51, 0.08);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 12px 16px;
   margin-bottom: 20px;
   max-width: 100%;
   position: relative;
 }
 .user-prompt-text {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
   color: var(--navy);
   line-height: 1.35;
   letter-spacing: -0.015em;
@@ -1281,7 +1281,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   position: absolute;
   right: 4px;
   top: 34px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 200;
   line-height: 1;
   color: rgba(245, 242, 235, 0.5);
@@ -1424,7 +1424,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   transform: translateX(-50%);
   width: 92px; height: 24px;
   background: #0A0907;
-  border-radius: 14px;
+  border-radius: 6px;
   z-index: 2;
 }
 
@@ -1698,7 +1698,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   .feature-row-reverse {
     direction: ltr;
   }
-  .feature-visual { order: -1; }
+  .feature-copy { text-align: center; align-items: center; padding: 40px 24px; order: -1; }
 }
 
 /* Feature copy block */
@@ -1727,7 +1727,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .feature-title {
   font-size: clamp(28px, 3vw, 40px);
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 300;
   color: var(--navy);
   margin: 0 0 16px;
   letter-spacing: -0.028em;
@@ -1742,7 +1742,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 }
 
 @media (max-width: 880px) {
-  .feature-copy { padding: 40px 24px; }
+  .feature-copy { padding: 40px 24px; text-align: center; align-items: center; }
 }
 
 /* Feature visual block */
@@ -1756,7 +1756,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   width: 100%;
   max-width: 420px;
   background: var(--navy);
-  border-radius: 14px;
+  border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 22px;
   color: #F7F3EA;
@@ -1766,7 +1766,9 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 }
 
 @media (max-width: 880px) {
-  .feature-visual { padding: 32px 24px; }
+  .feature-visual { padding: 32px 24px; justify-content: center; }
+  .feature-title { white-space: normal !important; text-wrap: balance; }
+  .feature-desc { text-align: center; }
 }
 
 /* =========================================================================
@@ -1963,7 +1965,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   padding: 10px 14px;
   background: #fff;
   border: 1px solid rgba(10, 21, 51, 0.1);
-  border-radius: 14px;
+  border-radius: 6px;
 }
 .chat-input-text {
   font-size: 13px;
@@ -2211,11 +2213,12 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   gap: 44px;
   margin-top: 60px;
 }
-@media (max-width: 880px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+.tm-cred { max-width: 28ch; text-wrap: balance; }
+@media (max-width: 880px) { .team-grid { grid-template-columns: repeat(2, 1fr); text-align: center; justify-items: center; } }
 @media (max-width: 560px) {
-  .team-grid { grid-template-columns: 1fr; gap: 36px; }
+  .team-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; justify-items: center; }
   /* Cap photo size so it doesn't fill the entire column width on single-col layout */
-  .tm-photo { max-width: 200px; }
+  .tm-photo { max-width: 200px; margin-left: auto; margin-right: auto; }
 }
 
 .tm-photo {
@@ -2275,7 +2278,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .cta-section {
   background: var(--dark-bg);
   color: #F5F2EB;
-  padding: 140px 0 100px;
+  padding: 80px 0 60px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -2300,7 +2303,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .cta-inner { position: relative; z-index: 1; }
 .cta-headline { margin: 0 0 16px; }
 .cta-sub {
-  font-size: 17px;
+  font-size: 40px;
   color: rgba(245, 242, 235, 0.7);
   max-width: 48ch;
   margin: 0 auto 36px;
@@ -2319,7 +2322,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .footer {
   background: var(--pale-blue);
   color: var(--muted);
-  padding: 70px 0 34px;
+  padding: 40px 0 24px;
   position: relative;
   z-index: 1;
 }
@@ -2328,11 +2331,12 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   justify-content: space-between;
   align-items: flex-start;
   gap: 44px;
-  padding-bottom: 44px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--cream-divider);
 }
 @media (max-width: 640px) {
-  .footer-inner { flex-direction: column; gap: 30px; }
+  .footer-inner { flex-direction: column; gap: 20px; }
+
 }
 .footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
 .footer-logo-svg {
@@ -2450,7 +2454,15 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   padding-bottom: 47%;
 }
 @media (max-width: 768px) {
-  .founder-photo { border-radius: 10px; }
+  .founder-photo { border-radius: 10px; padding-bottom: 150%; }
+  .founder-photo img { object-position: center 30% !important; }
+  .founder-photo::after {
+    width: 100% !important;
+    background:
+      linear-gradient(to top, rgba(10,21,51,0.9) 0%, rgba(10,21,51,0.7) 30%, rgba(10,21,51,0) 50%),
+      linear-gradient(to right, rgba(10,21,51,0.6) 0%, rgba(10,21,51,0) 25%),
+      linear-gradient(to left, rgba(10,21,51,0.6) 0%, rgba(10,21,51,0) 25%) !important;
+  }
 }
 .founder-photo img {
   position: absolute;
@@ -2493,7 +2505,9 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   padding: 0 48px;
 }
 @media (max-width: 768px) {
-  .founder-overlay { width: 100%; padding: 0 20px; top: auto; bottom: 20px; }
+  .founder-overlay { width: 100%; padding: 0 24px 24px; top: auto; bottom: 0; text-align: center; }
+  .founder-quote-text { font-size: 16px; max-width: 100%; }
+  .founder-attribution { font-size: 12px; }
 }
 
 .founder-quote-highlight {
@@ -2536,7 +2550,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   padding: 0 40px 12px;
 }
 @media (max-width: 768px) {
-  .capture-photo { margin-top: 36px; border-radius: 14px; }
+  .capture-photo { margin-top: 36px; border-radius: 6px; }
   .capture-overlay-inner { padding: 0 20px 8px; }
 }
 
@@ -3004,18 +3018,62 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 
 @media (max-width: 900px) {
   .capture-tabs {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     margin-top: 40px;
+    overflow: visible;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .capture-tabs-panels {
-    padding: 32px 24px;
-    min-height: 320px;
-    order: 2;
+    position: static !important;
+    width: 100% !important;
+    padding: 0 16px;
+    min-height: auto;
+    border-radius: 12px;
+    order: -1;
   }
-  .capture-tabs-list { order: 1; }
+  .capture-tabs-panels img {
+    max-height: 360px;
+    width: auto;
+    object-fit: contain;
+  }
+  .capture-panel[data-panel="record"],
+  .capture-panel[data-panel="dictate"],
+  .capture-panel[data-panel="upload"] {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    inset: auto !important;
+  }
+  .capture-tabs-list {
+    width: 100% !important;
+    padding: 0 16px;
+    padding-bottom: 60px;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .capture-tab {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 60px;
+  }
   .capture-tab { padding: 24px 0; }
-  .capture-tab:first-child { padding-top: 0; }
+  .capture-tab:first-child { padding-top: 24px; }
+  .viz-rec-photo,
+  .viz-dict-photo,
+  .viz-upload-photo {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px;
+    object-fit: cover !important;
+    transform: none !important;
+    border-radius: 12px;
+    aspect-ratio: 1 / 1;
+  }
   .capture-tab-name { font-size: 22px; }
 }
 
@@ -3221,22 +3279,24 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
    MANIFEST — vertical flow: five inputs flow down into Cubista
    ========================================================================= */
 .manifest-wrap {
+  margin-top: 60px; margin-bottom: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .manifest-stage {
-  position: relative;
   width: 100%;
   max-width: 920px;
-  aspect-ratio: 920 / 380;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  border: 1px solid rgba(10,21,51,0.07);
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(220,230,245,0.9) 0%, rgba(235,240,250,0.7) 50%, rgba(210,225,240,0.9) 100%);
 }
 .manifest-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+  display: none;
 }
 
 .m-connector {
@@ -3266,23 +3326,33 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 }
 
 .m-input {
-  position: absolute;
-  transform: translateX(-50%);
+  position: static;
+  transform: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  max-width: 19%;
   text-align: center;
-  font-size: clamp(12px, 1.5vw, 16px);
-  font-weight: 500;
-  color: var(--navy);
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(10,21,51,0.6);
   line-height: 1.25;
   letter-spacing: -0.005em;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(10,21,51,0.07);
+  border-bottom: 1px solid rgba(10,21,51,0.07);
+  border-radius: 0;
+  padding: 42px 12px;
+  grid-column: span 2;
 }
+.m-input:nth-child(4) { border-right: none; }
+.m-input:nth-child(5) { grid-column: 1 / 4; border-bottom: none; }
+.m-input:nth-child(6) { grid-column: 4 / 7; border-right: none; border-bottom: none; }
 .m-input i {
-  color: var(--royal);
-  font-size: 1.5em;
+  color: var(--navy);
+  font-size: 2em;
   font-style: normal;
   line-height: 1;
 }
@@ -3292,6 +3362,6 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 
 
 @media (max-width: 600px) {
-  .m-input { font-size: 11px; gap: 5px; }
-  .m-input i { font-size: 1.4em; }
+  .m-input { font-size: 15px; gap: 8px; }
+  .m-input i { font-size: 2em; }
 }
