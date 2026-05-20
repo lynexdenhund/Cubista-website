@@ -394,104 +394,72 @@
 </div>
 </section>
 
-    <!-- Data flow constellation -->
+    <!-- Process flow: Capture → Cubista → Deliver -->
     <section class="section dataflow-section">
       <div class="container">
-        <div class="dataflow reveal">
-          <svg class="dataflow-svg" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <linearGradient id="line-in" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.08"/>
-                <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.35"/>
-              </linearGradient>
-              <linearGradient id="line-out" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#3B6DE0" stop-opacity="0.35"/>
-                <stop offset="100%" stop-color="#3B6DE0" stop-opacity="0.08"/>
-              </linearGradient>
-              <filter id="node-shadow">
-                <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="rgba(10,21,51,0.08)"/>
-              </filter>
-              <filter id="hub-glow">
-                <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="rgba(59,109,224,0.15)"/>
-              </filter>
-            </defs>
+        <div class="process-flow reveal">
 
-            <!-- Input flow lines -->
-            <path d="M 185 100 C 320 100, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
-            <path d="M 185 250 C 320 250, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
-            <path d="M 185 400 C 320 400, 420 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
-            <path d="M 260 175 C 360 175, 430 250, 520 250" stroke="url(#line-in)" stroke-width="1.5" fill="none"/>
+          <!-- Step 1: Capture -->
+          <div class="pf-step">
+            <div class="pf-step-num">1</div>
+            <div class="pf-step-label">Capture</div>
+            <div class="pf-step-card">
+              <div class="pf-capture-item">
+                <i class="ph-light ph-record" aria-hidden="true"></i>
+                <span>Record</span>
+              </div>
+              <div class="pf-capture-item">
+                <i class="ph-light ph-microphone" aria-hidden="true"></i>
+                <span>Dictate</span>
+              </div>
+              <div class="pf-capture-item">
+                <i class="ph-light ph-upload-simple" aria-hidden="true"></i>
+                <span>Upload</span>
+              </div>
+            </div>
+          </div>
 
-            <!-- Output flow lines -->
-            <path d="M 680 250 C 780 250, 860 130, 1010 130" stroke="url(#line-out)" stroke-width="1.5" fill="none"/>
-            <path d="M 680 250 C 780 250, 860 370, 1010 370" stroke="url(#line-out)" stroke-width="1.5" fill="none"/>
+          <!-- Connector -->
+          <div class="pf-connector">
+            <div class="pf-line"></div>
+            <div class="pf-particle"></div>
+          </div>
 
-            <!-- Animated particles -->
-            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
-              <animateMotion dur="4s" repeatCount="indefinite" path="M 185 100 C 320 100, 420 250, 520 250"/>
-            </circle>
-            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
-              <animateMotion dur="4.5s" repeatCount="indefinite" path="M 185 250 C 320 250, 420 250, 520 250"/>
-            </circle>
-            <circle r="3.5" fill="#3B6DE0" opacity="0.7">
-              <animateMotion dur="5s" repeatCount="indefinite" path="M 185 400 C 320 400, 420 250, 520 250"/>
-            </circle>
-            <circle r="3" fill="#3B6DE0" opacity="0.7">
-              <animateMotion dur="4.2s" repeatCount="indefinite" path="M 260 175 C 360 175, 430 250, 520 250"/>
-            </circle>
-            <circle r="3" fill="#1E40AF" opacity="0.6">
-              <animateMotion dur="3.5s" repeatCount="indefinite" path="M 680 250 C 780 250, 860 130, 1010 130"/>
-            </circle>
-            <circle r="3" fill="#1E40AF" opacity="0.6">
-              <animateMotion dur="3.8s" repeatCount="indefinite" path="M 680 250 C 780 250, 860 370, 1010 370"/>
-            </circle>
+          <!-- Step 2: Process -->
+          <div class="pf-step">
+            <div class="pf-step-num">2</div>
+            <div class="pf-step-label">Process</div>
+            <div class="pf-hub">
+              <div class="pf-hub-inner">
+                <span class="pf-hub-sub">Powered by AI</span>
+                <span class="pf-hub-name">CUBISTA</span>
+              </div>
+              <div class="pf-hub-ring"></div>
+            </div>
+          </div>
 
-            <!-- Source nodes -->
-            <g filter="url(#node-shadow)">
-              <rect x="100" y="62" width="170" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="148" y="106" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128101;</text>
-              <text x="210" y="106" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">CRM</text>
-            </g>
-            <g filter="url(#node-shadow)">
-              <rect x="160" y="137" width="200" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="212" y="181" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128200;</text>
-              <text x="286" y="181" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Fund data</text>
-            </g>
-            <g filter="url(#node-shadow)">
-              <rect x="100" y="212" width="170" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="148" y="256" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#9993;&#65039;</text>
-              <text x="210" y="256" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Email</text>
-            </g>
-            <g filter="url(#node-shadow)">
-              <rect x="100" y="362" width="190" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="148" y="406" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128197;</text>
-              <text x="220" y="406" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Calendar</text>
-            </g>
+          <!-- Connector -->
+          <div class="pf-connector">
+            <div class="pf-line"></div>
+            <div class="pf-particle pf-particle-delay"></div>
+          </div>
 
-            <!-- Center hub -->
-            <g filter="url(#hub-glow)">
-              <circle cx="600" cy="250" r="80" fill="var(--navy)"/>
-              <text x="600" y="244" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-weight="500" font-family="var(--font-sans)" letter-spacing="0.18em" text-transform="uppercase">POWERED BY AI</text>
-              <text x="600" y="268" text-anchor="middle" fill="#fff" font-size="18" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.06em">CUBISTA</text>
-            </g>
-            <!-- Orbiting ring -->
-            <circle cx="600" cy="250" r="100" fill="none" stroke="rgba(59,109,224,0.06)" stroke-width="1" stroke-dasharray="6 8">
-              <animateTransform attributeName="transform" type="rotate" from="0 600 250" to="360 600 250" dur="40s" repeatCount="indefinite"/>
-            </circle>
+          <!-- Step 3: Deliver -->
+          <div class="pf-step">
+            <div class="pf-step-num">3</div>
+            <div class="pf-step-label">Deliver</div>
+            <div class="pf-step-card">
+              <div class="pf-capture-item">
+                <i class="ph-light ph-database" aria-hidden="true"></i>
+                <span>Updated in CRM</span>
+              </div>
+              <div class="pf-capture-item">
+                <i class="ph-light ph-paper-plane-tilt" aria-hidden="true"></i>
+                <span>Sent to analyst</span>
+              </div>
+            </div>
+          </div>
 
-            <!-- Output nodes -->
-            <g filter="url(#node-shadow)">
-              <rect x="930" y="92" width="180" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="978" y="136" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128161;</text>
-              <text x="1046" y="136" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Insights</text>
-            </g>
-            <g filter="url(#node-shadow)">
-              <rect x="930" y="332" width="180" height="76" rx="38" fill="#fff" stroke="rgba(10,21,51,0.06)" stroke-width="1"/>
-              <text x="978" y="376" text-anchor="middle" font-size="22" font-family="var(--font-sans)">&#128640;</text>
-              <text x="1046" y="376" text-anchor="middle" fill="var(--navy)" font-size="14" font-weight="600" font-family="var(--font-sans)" letter-spacing="0.02em">Actions</text>
-            </g>
-
-          </svg>
         </div>
       </div>
     </section>
@@ -552,11 +520,11 @@
         <div class="footer-brand">
           <svg class="footer-logo-svg" viewBox="0 0 415 112" role="img" aria-label="Cubista" focusable="false"><use href="#cubista-logo"/></svg>
         </div>
-        <p class="footer-tagline">Relationship intelligence for private equity.</p>
+        <p class="footer-tagline">The AI brain for dealmakers.</p>
       </div>
       <div class="footer-right">
-        <a href="mailto:hello@cubista.com" class="footer-contact">hello@cubista.com</a>
-        <a href="mailto:pilot@cubista.com" class="footer-contact">pilot@cubista.com</a>
+        <p class="footer-contact-label">Contact us</p>
+        <a href="mailto:team@cubista.io" class="footer-contact">team@cubista.io</a>
       </div>
     </div>
     <div class="footer-base">
