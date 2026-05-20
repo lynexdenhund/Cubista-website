@@ -3076,7 +3076,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   z-index: 1;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--gutter);
+  padding: 0 var(--gutter) 40px;
 }
 .capture .display-lg.on-dark { color: var(--navy); }
 .capture-cta-row {
