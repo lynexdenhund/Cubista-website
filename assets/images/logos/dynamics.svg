@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60">
+  <!-- Dynamics 365 geometric icon - stylized cube -->
+  <g transform="translate(5,5)">
+    <polygon points="25,0 50,12 50,38 25,50 0,38 0,12" fill="#0078D4" opacity="0.9"/>
+    <polygon points="25,0 50,12 50,38 25,25" fill="#1490DF" opacity="0.85"/>
+    <polygon points="25,0 0,12 0,38 25,25" fill="#0058A3" opacity="0.9"/>
+    <polygon points="25,50 50,38 25,25 0,38" fill="#004578" opacity="0.85"/>
+  </g>
+  <!-- Dynamics 365 text -->
+  <text x="65" y="37" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600" fill="#0078D4">Dynamics 365</text>
+</svg>

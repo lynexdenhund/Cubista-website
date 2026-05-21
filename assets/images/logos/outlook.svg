@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <!-- Outlook envelope icon -->
+  <g transform="translate(8,8)">
+    <!-- Back envelope -->
+    <rect x="8" y="2" width="34" height="28" rx="2" fill="#0078D4"/>
+    <!-- Envelope flap -->
+    <polygon points="8,2 25,18 42,2" fill="#1490DF"/>
+    <!-- Front panel with O -->
+    <rect x="0" y="8" width="24" height="30" rx="2" fill="#0058A3"/>
+    <text x="12" y="29" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">O</text>
+  </g>
+  <!-- Outlook text -->
+  <text x="55" y="37" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600" fill="#0078D4">Outlook</text>
+</svg>

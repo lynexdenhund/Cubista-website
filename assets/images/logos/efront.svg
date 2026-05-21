@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 60" width="180" height="60">
+  <!-- eFront wordmark -->
+  <text x="12" y="40" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#0066CC" letter-spacing="0.5">
+    <tspan font-weight="400" font-style="italic">e</tspan><tspan font-weight="700">Front</tspan>
+  </text>
+</svg>
